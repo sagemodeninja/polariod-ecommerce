@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/antixlzd/polaroid-ecommerce.antierfamily.com/
+    - npm install
+    - npm run build
+    - /bin/cp app.js $DEPLOYPATH
+    - /bin/cp -R dist $DEPLOYPATH
