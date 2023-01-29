@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/antixlzd/polaroid-ecommerce.antierfamily.com/
-    - /bin/cp !(.git|.cpanel.yml|.gitignore) $DEPLOYPATH
+    - shopt -s extglob
+    - /bin/cp -r !(.git|.cpanel.yml|.gitignore) $DEPLOYPATH
