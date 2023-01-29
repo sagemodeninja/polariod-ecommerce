@@ -4,3 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/antixlzd/polaroid-ecommerce.antierfamily.com/
     - source /home/antixlzd/nodevenv/polaroid-ecommerce.antierfamily.com/14/bin/activate
     - npm install
+    - npm run build
+    - /bin/cp app.js $DEPLOYPATH
+    - /bin/cp -R dist $DEPLOYPATH
